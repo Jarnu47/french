@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Speech French</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Text to Speech French</h1>
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+        <br />
+        <span class="label">Speed: </span>
+        <input type="range" class="slider" id="speed" min="1" max="6" value="4" onChange="updateSlider('speed');">
+        <span class="sliderDisplay" id="speedDisp"></span>
+        <br />
+        <span class="label">Pitch: </span>
+        <input type="range" class="slider" id="pitch" min="0" max="4" value="2" onChange="updateSlider('pitch');">
+        <span class="sliderDisplay" id="pitchDisp"></span>
+        <br />
+        <select name="voices" id="voices">
+        </select>
+        <br />
+        <button id="speak" onClick="speak()">Speak</button>
+        <p>
+            made this for my french class
+        </p>
+        <p>
+            yes i know this website looks bad, im still woring on it, so it might be buggy.
+        </p>
+    </div>
+</body>
+
+</html>
