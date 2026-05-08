@@ -33,3 +33,6 @@ function speak() {
     utterance.voice = allVoices[selectedVoiceIndex];
     window.speechSynthesis.speak(utterance);
 }
+function stop() {
+    window.speechSynthesis.cancel();
+}
